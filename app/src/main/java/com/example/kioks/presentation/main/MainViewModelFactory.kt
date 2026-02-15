@@ -4,7 +4,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.kioks.domain.usecase.GetCurrentTimeUseCase
 import com.example.kioks.domain.usecase.SaveScreenshotUseCase
-
 class MainViewModelFactory(
     private val getCurrentTimeUseCase: GetCurrentTimeUseCase,
     private val saveScreenshotUseCase: SaveScreenshotUseCase

@@ -240,6 +240,9 @@ class MainActivity : AppCompatActivity() {
             setImageBitmap(bitmap)
             visibility = View.VISIBLE
             alpha = 0f
+            setBackgroundColor(
+                resources.getColor(android.R.color.holo_green_light)
+            )
             scaleX = 0.9f
             scaleY = 0.9f
 
