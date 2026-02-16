@@ -115,10 +115,8 @@ class MainActivity : AppCompatActivity() {
 
                         is MainUiState.ScreenshotSaved -> {
 
-                            // preview
                             showScreenshotPreview(state.bitmap)
 
-                            // save last screenshot time
                             getSharedPreferences("logs", MODE_PRIVATE)
                                 .edit()
                                 .putString("last_screenshot", state.time)
@@ -127,8 +125,6 @@ class MainActivity : AppCompatActivity() {
                             binding.tvLastScreenshot.text =
                                 "Last Screenshot: ${state.time}"
                         }
-
-
 
                         else -> {}
                     }
@@ -241,7 +237,7 @@ class MainActivity : AppCompatActivity() {
             visibility = View.VISIBLE
             alpha = 0f
             setBackgroundColor(
-                resources.getColor(android.R.color.holo_green_light)
+                resources.getColor(android.R.color.holo_red_dark)
             )
             scaleX = 0.9f
             scaleY = 0.9f
